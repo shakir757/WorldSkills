@@ -8,4 +8,5 @@
     <color name="colorText">#262C38</color>
     <color name="colorBgConverter">#262D38</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#707070</color>
 </resources>
