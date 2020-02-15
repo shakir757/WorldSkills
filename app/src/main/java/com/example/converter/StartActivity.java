@@ -19,6 +19,9 @@ public class StartActivity extends AppCompatActivity {
         SharedPreferences prefs = context.getSharedPreferences("myAppPrefs", Context.MODE_PRIVATE);
         Boolean isOnboardingPresented = prefs.getBoolean("isOnboardingPresented", false);
 
+        // тут ваще бред какой-то, должно все работать по коду, проверил все 999 раз
+        // но почему сразу открыватся конвертер
+
         if (!isOnboardingPresented) {
             Intent intent1 = new Intent(this, MainActivity.class);
             startActivity(intent1);

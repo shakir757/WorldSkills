@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.15">
 
         <ImageView
-            android:id="@+id/imageViewFirst"
+            android:id="@+id/imageViewSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -29,7 +29,7 @@
             app:layout_constraintVertical_bias="0.2" />
 
         <TextView
-            android:id="@+id/textViewTitle1"
+            android:id="@+id/textViewTitle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
@@ -39,11 +39,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewFirst"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSecond"
             app:layout_constraintVertical_bias="0.2" />
 
         <TextView
-            android:id="@+id/textViewDescription1"
+            android:id="@+id/textViewDescription2"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text=""
@@ -53,7 +53,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle2"
             app:layout_constraintVertical_bias="0.1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewNext2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NEXT"
@@ -82,13 +82,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewSkip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SKIP"
-            android:onClick="gotoMain"
             android:textColor="@color/colorText"
             android:textSize="14dp"
+            android:onClick="gotoMain"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
@@ -100,10 +100,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/textViewNext2"
+            app:layout_constraintStart_toEndOf="@+id/textViewSkip2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/number_page" />
+            app:srcCompat="@drawable/number_page2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
