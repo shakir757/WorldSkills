@@ -26,14 +26,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:layout_constraintVertical_bias="0.2" />
 
         <TextView
             android:id="@+id/textViewTitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Title"
+            android:text=""
             android:textColor="@color/colorText"
             android:textSize="24dp"
             android:textStyle="bold"
@@ -47,7 +46,7 @@
             android:id="@+id/textViewDescription1"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text=""
             android:textAlignment="center"
             android:textColor="@color/colorText"
             android:textSize="14dp"
