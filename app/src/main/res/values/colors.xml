@@ -6,4 +6,6 @@
     <color name="colorBackground">#3F3C56</color>
     <color name="colorBg2">#FAFAFA</color>
     <color name="colorText">#262C38</color>
+    <color name="colorBgConverter">#262D38</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

@@ -16,7 +16,8 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         Context context = getApplicationContext();
-        SharedPreferences prefs = context.getSharedPreferences("myAppPrefs", Context.MODE_PRIVATE);
+        // SharedPreferences prefs = context.getSharedPreferences("myAppPrefs", Context.MODE_PRIVATE);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         Boolean isOnboardingPresented = prefs.getBoolean("isOnboardingPresented", false);
 
         // тут ваще бред какой-то, должно все работать по коду, проверил все 999 раз
