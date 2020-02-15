@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textViewConvert"
+        android:id="@+id/textViewConvert1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Convert"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <TextView
-        android:id="@+id/textViewSettings"
+        android:id="@+id/textViewSettings1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="gotoConverter"
-        app:layout_constraintBottom_toTopOf="@+id/textViewConvert"
+        app:layout_constraintBottom_toTopOf="@+id/textViewConvert1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
         android:id="@+id/imageViewSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textViewSettings"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSettings1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +73,7 @@
     <!-- Bottom menu end -->
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
@@ -120,12 +120,13 @@
             app:layout_constraintVertical_bias="0.3" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewChangeLanguage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change Language"
             android:textColor="@color/colorBlack"
             android:textSize="16dp"
+            android:onClick="changelanguage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.25"
@@ -134,7 +135,7 @@
             app:layout_constraintVertical_bias="0.1" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Info"
@@ -151,8 +152,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="changelanguage"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintEnd_toStartOf="@+id/textViewChangeLanguage"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.1"
@@ -163,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/textViewInfo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.25"
@@ -173,10 +175,11 @@
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="changelanguage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textViewChangeLanguage"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.11"
             app:srcCompat="@drawable/chevronright" />
@@ -188,10 +191,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textViewChangeLanguage"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.26"
             app:srcCompat="@drawable/chevronright" />
+
+        <TextView
+            android:id="@+id/textViewVerison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="app version 1.0"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
